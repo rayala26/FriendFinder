@@ -198,7 +198,7 @@
             <div class="container">
                 <p>
                     <a href="/api/friends">API Friends List</a> |
-                    <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a>
+                    <a href="https://github.com/rayala26/FriendFinder">GitHub Repo</a>
                 </p>
             </div>
         </footer>
@@ -217,7 +217,7 @@
                 photo: $('#photo').val().trim(),
                 scores: [$('#q1').val().trim(), $('#q2').val().trim(), $('#q3').val().trim(), $('#q4').val().trim(), $('#q5').val().trim(), $('#q6').val().trim(), $('#q7').val().trim(), $('#q8').val().trim(), $('#q9').val().trim(), $('#q10').val().trim()],
             };
-            $.post("/api/users", user, function (data) {
+            $.post("/api/friends", user, function (data) {
                 console.log(data)
                 if (data) {
                     alert("You've submitted the survey! Sit tight while we find you a friend!");
