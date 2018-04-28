@@ -17,11 +17,10 @@ module.exports = function(app) {
 		//capture of the user input object
 		var userInput = req.body;
 		var userResponses = userInput.scores;
-		//best friend match portion
 		//set up best friend variables
 		var matchName = '';
 		var matchImage = '';
-		var totalDifference = 10000; //initial value large for comparison
+		var totalDifference = 100; //initial value large for comparison
 			for (var i = 0; i < friendsData.length; i++) {
 				var diff = 0
 				for (var j = 0; j < userResponses.length; j++){

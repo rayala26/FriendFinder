@@ -184,6 +184,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
+                    <h2 id="match-img"></h2>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -221,11 +222,9 @@
                 console.log(data)
                 if (data) {
                     alert("You've submitted the survey! Sit tight while we find you a friend!");
-                    $.get("api/friends/match/" + data.id, function (data) {
-                    $("match-name").text(data.name);
-                    $("match-img").attr("src", data.photo);   
+                    $("#match-name").text(data.matchName);
+                    $("#match-img").attr("src", data.matchImage);   
                     $("#results-modal").modal("toggle");    
-                    })
                 }
                 // If a table is available... tell user they on the waiting list.
                 if (data == false) {

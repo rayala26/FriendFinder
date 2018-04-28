@@ -1,4 +1,4 @@
-var data = 
+var friendsData = 
 [{
   "name": "Ana",
   "photo": "https://image.freepik.com/free-vector/pop-art-girl-pointing-at-something_1441-108.jpg",
@@ -21,4 +21,4 @@ var data =
 }];
 
 
-module.exports = data;
+module.exports = friendsData;
